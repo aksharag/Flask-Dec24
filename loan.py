@@ -1,6 +1,7 @@
 from flask import Flask, request
 import pickle
 
+# master variable - controls entire application
 app = Flask(__name__)
 
 # model loading
@@ -10,7 +11,7 @@ model = pickle.load(model_file)
 # API endpoints
 @app.route('/')
 def home():
-    return "<h1> Loan Approval Application</h1>"
+    return "<h1>Loan Approval Application</h1>"
 
 
 @app.route('/predict', methods=['GET','POST'])
