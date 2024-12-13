@@ -15,7 +15,7 @@ def home():
 
 
 @app.route('/ping')
-def home():
+def ping():
     return {"message":"Hey there..."}
 
 
