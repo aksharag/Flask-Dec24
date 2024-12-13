@@ -52,3 +52,9 @@ def predict():
 
 
         return {"loan_approval_status":pred}
+    
+
+
+@app.route('/carprice')
+def ping():
+    return {"message":"This will predict the resale price of the car. "}
