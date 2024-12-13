@@ -56,5 +56,5 @@ def predict():
 
 
 @app.route('/carprice')
-def ping():
+def ping2():
     return {"message":"This will predict the resale price of the car. "}
